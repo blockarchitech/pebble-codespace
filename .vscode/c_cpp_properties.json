@@ -9,6 +9,7 @@
                 "/home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/diorite/include",
                 "/home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/emery/include",
                 "/home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/common/include",
+                "${workspaceFolder}/**",
                 "${default}"
             ]
         }
