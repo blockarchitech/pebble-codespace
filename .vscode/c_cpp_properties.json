@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Pebble",
+            "includePath": [
+                "/home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/include",
+                "/home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt/include",
+                "/home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/chalk/include",
+                "/home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/diorite/include",
+                "/home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/emery/include",
+                "/home/pebble/.pebble-sdk/SDKs/current/sdk-core/pebble/common/include",
+                "${default}"
+            ]
+        }
+    ]
+}
