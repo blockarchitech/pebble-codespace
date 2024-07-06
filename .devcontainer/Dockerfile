@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:oldstable
 
 # update system and get base packages
 RUN apt-get update && \
