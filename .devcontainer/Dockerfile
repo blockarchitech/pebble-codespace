@@ -29,6 +29,7 @@ RUN /bin/bash -c " \
         curl -sSL https://bootstrap.pypa.io/pip/2.7/get-pip.py | python && \
         pip install -r requirements.txt && \
         pip install certifi && \
+        pip install httplib2 && \
         deactivate " && \
     rm -r /root/.cache/
 
@@ -59,6 +60,10 @@ RUN yes | pebble sdk install latest
 
 # set mount path
 VOLUME /pebble/
+
+# Copy CA Cert bundle to certifi and websockets
+COPY cacert.pem /opt/${PEBBLE_TOOL_VERSION}/.env/lib/python2.7/site-packages/websocket
+COPY cacert.pem /opt/${PEBBLE_TOOL_VERSION}/.env/lib/python2.7/site-packages/certifi
 
 #run command
 WORKDIR /pebble/
